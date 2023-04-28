@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Data Table</title>
+  </head>
+  <link rel="stylesheet" href="./details.css">
+  <body>
+    <h1>Student Data Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Batch</th>
+          <th>College</th>
+          <th>Status</th>
+          <th>DSA</th>
+          <th>React</th>
+          <th>Company</th>
+          <th>Date</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each students}}
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.batch}}</td>
+          <td>{{this.college}}</td>
+          <td>{{this.status}}</td>
+          <td>{{this.dsaFinalScore}}</td>
+          <td>{{this.reactFinalScore}}</td>
+          <td>{{this.company}}</td>
+         <td>{{this.date}}</td>
+         <td>{{this.result}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <a href="/details/download">
+    <button id="download-btn">Download CSV</button>
+    </a>
+    <h2>ADD ANOTHER</h2>
+    {{>form}}
+  </body>
+</html>

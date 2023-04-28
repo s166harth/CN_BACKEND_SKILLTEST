@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs List</title>
+</head>
+<body>
+    <h1>Jobs List</h1>
+    {{#each jobs}}
+    <div>
+        <h2>{{this.title}}</h2>
+        <p>{{{this.description}}}</p>
+        <p>Category: {{this.category}}</p>
+        <p>Salary: {{this.salary}}</p>
+    </div>
+    {{/each}}
+</body>
+</html>

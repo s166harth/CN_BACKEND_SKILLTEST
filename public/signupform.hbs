@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+  </head>
+  <style>
+    /* Center align the form and give it some padding */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+  </style>
+  <body>
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </body>
+</html>
