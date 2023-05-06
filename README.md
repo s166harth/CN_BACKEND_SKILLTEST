@@ -1,4 +1,4 @@
-Here's an example README file for the CN_BACKEND_SKILLTEST repository:
+
 
 # CN_BACKEND_SKILLTEST
 
