@@ -37,7 +37,7 @@ app.set('view engine', 'hbs');
 hbs.registerPartials('./partials');
 
 
-app.get(`/student`, function(req, res){
+app.get(`/`, function(req, res){
     res.render('home');
 })
 app.get(`/signup`, function(req, res){
